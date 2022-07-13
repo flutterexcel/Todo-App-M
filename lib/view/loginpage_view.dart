@@ -11,6 +11,7 @@ import 'package:todo_app/utils/google_authentication.dart';
 import 'package:todo_app/utils/routes.dart';
 import 'package:todo_app/view/homepage_view.dart';
 import 'package:todo_app/view/signuppage_view.dart';
+import 'package:todo_app/view/transaction_view.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -34,6 +35,16 @@ class _LoginPageState extends State<LoginPage> {
         return Scaffold(
           appBar: AppBar(
             title: const Text('Todo app'),
+            actions: [
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Transaction()));
+                  },
+                  child: Text("Transactions"))
+            ],
             backgroundColor: const Color(0xFFAF7AC5),
           ),
           body: SingleChildScrollView(
