@@ -101,7 +101,7 @@ class _TransactionState extends State<Transaction> {
   @override
   void initState() {
     super.initState();
-    fetchSMS(1);
+    fetchSMS(7);
   }
 
   @override

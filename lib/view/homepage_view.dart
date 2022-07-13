@@ -140,19 +140,20 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.only(left: 10, top: 10, bottom: 05),
               child: Container(
-                height: 40,
+                height: 45,
                 child: ListView(
                   padding: const EdgeInsets.only(top: 2.0, bottom: 2.0),
                   scrollDirection: Axis.horizontal,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                      padding: const EdgeInsets.only(right: 10.0),
                       child: Material(
+                        color: Colors.white38,
                         borderOnForeground: true,
                         elevation: 3.0,
                         borderRadius: BorderRadius.circular(60),
@@ -173,8 +174,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                      padding: const EdgeInsets.only(right: 10.0),
                       child: Material(
+                        color: Colors.white38,
                         elevation: 3.0,
                         borderRadius: BorderRadius.circular(60),
                         child: InkWell(
@@ -194,8 +196,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                      padding: const EdgeInsets.only(right: 10.0),
                       child: Material(
+                        color: Colors.white38,
                         elevation: 3.0,
                         borderRadius: BorderRadius.circular(60),
                         child: InkWell(
@@ -215,8 +218,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                      padding: const EdgeInsets.only(right: 10.0),
                       child: Material(
+                        color: Colors.white38,
                         elevation: 3.0,
                         borderRadius: BorderRadius.circular(60),
                         child: InkWell(
@@ -236,8 +240,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+                      padding: const EdgeInsets.only(right: 10.0),
                       child: Material(
+                        color: Colors.white38,
                         elevation: 3.0,
                         borderRadius: BorderRadius.circular(60),
                         child: InkWell(
@@ -268,7 +273,7 @@ class _HomePageState extends State<HomePage> {
                 print("category state");
                 return Container(
                     padding: EdgeInsets.all(10),
-                    height: 470,
+                    height: MediaQuery.of(context).size.height * 0.70,
                     child: ListView.builder(
                         itemCount: state.dont.length,
                         itemBuilder: (context, index) {
