@@ -46,8 +46,7 @@ dependencies:
   charts_flutter:
   syncfusion_flutter_charts:
   file_picker:
-  sms:
-  flutter_sms_inbox:
+  telephony:
   
 
 
